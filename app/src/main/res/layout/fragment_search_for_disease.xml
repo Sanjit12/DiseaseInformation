@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.sanjit.diseaseinformation.SearchForDisease">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Disease Name"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:background="@drawable/buttonshape"
+                android:text="Search"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/outText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

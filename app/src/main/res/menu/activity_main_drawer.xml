@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="ALL DISEASE INFOMATION" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="NEW DISEASE INFO" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="DELETE INFORMATION" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="SEARCH DISEASE" />
+    </group>
+
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="CALL DOCTOR" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="GET EMERGENCY HELP" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="ABOUT"
+                />
+        </menu>
+    </item>
+
+
+</menu>

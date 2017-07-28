@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.sanjit.diseaseinformation.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/inputroll"
+                android:layout_marginTop="14dp"
+                android:ems="8"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/inputmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/inputname"
+                android:layout_alignStart="@+id/inputname"
+                android:layout_below="@+id/inputname"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/inputname"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Disease Name:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="98dp"
+                android:ems="8"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/inputmark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Symptomps:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="25dp"
+                android:text="Causes:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="25dp"
+                android:text="First AID:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="25dp"
+                android:text="Treatment"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="addbuttonclicked"
+                android:text="ADD Info To Database"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/inputmark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Disease Type:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/addbutton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ems="8"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ems="8"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ems="8"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="New Disease Information"
+                android:textColor="@android:color/background_dark"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
